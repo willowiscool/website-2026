@@ -1,0 +1,34 @@
+/* technical */
+#one-char {
+	position: absolute;
+	visibility: hidden;
+}
+html, body, .monospace {
+	margin: 0;
+	width: 100vw;
+}
+#js-body {
+	overflow: hidden;
+	white-space: pre;
+}
+#text { /* when no js */
+	box-sizing: border-box;
+	padding-left: 1ch;
+}
+#text p:first-child {
+	margin-top: 0;
+}
+/* stylistic */
+html {
+	background: #f0f8ee;
+	color: #203000;
+	line-height: 1.2;
+	font-size: 18pt;
+}
+.monospace {
+	font-family: "Inconsolata", monospace;
+}
+a {
+	color: #2030c0;
+	text-decoration: underline;
+}
