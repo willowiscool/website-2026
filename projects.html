@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>willowis.cool | projects</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/global.css">
+	<script defer src="/global.js"></script>
+</head>
+<body>
+	<pre id="one-char">0</pre>
+	<div class="monospace" id="js-body"></div>
+	<!-- below: essentially noscript (display set to zero once loaded) -->
+<p class="monospace" id="text">
+Willow Veytsman: Projects
+-------------------------
+
+Last updated Feb. 28, 2026.
+<a href="/index.html">back home</a>
+
+This site will contain long and drawn-out descriptions of projects I've worked on both at work and outside of it. You might like to see <a href="/experience.html">my CV</a> instead.
+
+** My homelab, <a href="https://willow.city">Willow City</a>
+  My homelab is how I'm exploring networking, self-hosting, security (hopefully!), and all the other fun stuff you can do with a couple of computers plugged into your network. I got started on this project at the beginning of 2026 after spending years watching youtube videos and seeing social media posts from people doing similar things, and I expect it to be a living project that grows to fit my needs, knowledge, and resources. Click on the link above to learn more about what I've got going on right now and how it's evolved!
+  (it's only really called that because I saw the domain was available and thought it would be funny haha)
+
+** Undergraduate Research: CBET
+- <a href="cbet_poster.pdf">Poster presented at the Laboratory for Laser Energetics for 3D CUDA CBET</a>
+- <a href="https://github.com/willowiscool/cbet_cu">Summer 2025 3D CUDA verison GitHub</a>
+- <a href="https://arxiv.org/abs/2410.19146">Rust vs C++ Paper Draft</a>
+- <a href="https://github.com/willowiscool/cbet_rs">Summer 2024 2D Rust implementation GitHub (not as well documented)</a>
+  The majority of my time as an Undergraduate Research Assistant for the Triforce Institute for Multiphysics Modeling was spent working on the CBET project. CBET, or Cross Beam Energy Transfer, is an interaction between multiple high-intensity laser beams in a high-density plasma in which energy is transferred between lasers. Such high-intensity lasers are used at the <a href="https://www.lle.rochester.edu/omega-laser-facility/">OMEGA Laser Facility</a> at the University of Rochester to research nuclear fusion, but the amount of research that can be done is limited by the capacity of the system, so an accurate and fast simulation would provide valuable to scientific research. The code I worked on simulates this effect, and my job was to improve its performance by looking at the code from a Computer Science perspective
+  Guided and mentored by professors Adam Sefkow and Chen Ding, I spent summer of 2024 re-writing the project from an existing C++ code to Rust, along the way improving its performance by upwards of 5-6x. I also worked on parallelizing the code and investigating the degree to which performance can be improved. After doing this, my teammates and I wrote a paper on the project, which you can find a draft of <a href="https://arxiv.org/abs/2410.19146">here</a> (although, as of writing, it is somewhat out of date due to revisions made during a peer review process), and if we can pass peer review we may be included in the journal Computer Physics Communications. Later, I extended this code to use CUDA for some functions of the code, taking advantage of foreign function interfaces and weaving Rust and C++ together.
+  In the summer of 2025, I worked again on the project, this time working with a version of the code that simulated the interaction in 3D space instead of 2D, and this time working to parallelize the code using GPU hardware. This was done with C++ and CUDA, and yielded significant performance gains. Special tricks had to be done to support large problem sizes and to enable multi-GPU support. This summer I also worked out of the Laboratory for Laser Energetics, and presented a <a href="cbet_poster.pdf">poster</a> at their undergraduate research poster session at the end of the summer.
+</p>
+</body>
+</html>

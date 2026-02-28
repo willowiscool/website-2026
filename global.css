@@ -5,18 +5,17 @@
 }
 html, body, .monospace {
 	margin: 0;
-	width: 100vw;
 }
 #js-body {
 	overflow: hidden;
 	white-space: pre;
+	width: 100vw;
 }
 #text { /* when no js */
 	box-sizing: border-box;
-	padding-left: 1ch;
-}
-#text p:first-child {
-	margin-top: 0;
+	padding-left: 2ch;
+	max-width: 82ch;
+	white-space: pre-wrap;
 }
 /* stylistic */
 html {
