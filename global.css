@@ -9,7 +9,6 @@ html, body, .monospace {
 #js-body {
 	overflow: hidden;
 	white-space: pre;
-	width: 100vw;
 }
 #text { /* when no js */
 	box-sizing: border-box;
